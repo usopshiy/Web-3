@@ -1,0 +1,26 @@
+    <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Lab3</title>
+    <h:outputStylesheet name="555/style.css"/>
+</h:head>
+
+<h:body>
+    <div class="index-content">
+        <div class="clock-container">
+            <p:clock displayMode="digital" pattern="dd.MM.yyyy : hh.mm" mode="server" autoSync="true" syncInterval="10000"/>
+        </div>
+        <div class="buttons-container buttons-container-index">
+            <h:form>
+                <p:button styleClass="button-style" value="To Graph" outcome="to_main"/>
+            </h:form>
+        </div>
+    </div>
+</h:body>
+</html>
